@@ -1,9 +1,15 @@
 #con {
   display: flex;
   flex-wrap: wrap;
-  width: 100vw;
-  height: 100vh;
+  width: 80vw;  /* Adjust width as needed */
+  height: 80vh; /* Adjust height as needed */
+  max-width: 600px; /* Set a maximum width */
+  max-height: 600px; /* Set a maximum height */
   box-sizing: border-box;
+  border: 10px solid red;
+  margin: 10px auto; /* Center container horizontally and move it down a bit */
+  position: relative; /* Relative positioning for alignment */
+  top: 50px; /* Move container down a bit from the center */
 }
 
 .grid-item {
@@ -11,4 +17,8 @@
   border: 1px solid #ddd;
   flex: 1 0 calc(100% / 16); /* Grow, shrink, and basis settings to create the 16 columns */
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.grid-item:hover {
+  background-color: darkgrey;
 }
